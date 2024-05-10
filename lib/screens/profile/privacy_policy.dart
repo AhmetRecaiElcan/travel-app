@@ -13,7 +13,7 @@ class PrivacyPolicyScreen extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            _launchURL('https://www.google.com/');
+            _launchURL('http://www.honorable.com.tr/');
           },
           child: Text('Open Google'),
         ),

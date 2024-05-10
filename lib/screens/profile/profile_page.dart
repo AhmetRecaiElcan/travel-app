@@ -278,7 +278,7 @@ class ProfileDetail extends StatelessWidget {
                     Row(
                       children: <Widget>[
                         const Text(
-                          'Masami Ramayana',
+                          'Honorable',
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 18.0,

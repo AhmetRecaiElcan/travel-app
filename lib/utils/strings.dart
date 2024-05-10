@@ -1,8 +1,9 @@
-class Strings{
-
-  static  String description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s";
+class Strings {
+  static String description =
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s";
   static String forgotPassword = "Forgot Password ?";
-  static String forgotPassDesc = "Please enter your email address, you will receive a link to create a new password via email";
+  static String forgotPassDesc =
+      "Please enter your email address, you will receive a link to create a new password via email";
   static String hintEmail = "Your Email";
   static String hintName = "Your Name";
   static String hintPhoneNumber = "Phone Number";
@@ -17,7 +18,7 @@ class Strings{
   static String taskDes = "Do daily task to gain the integrals";
   static String darkTheme = "Dark Theme";
   static String darkThemeDec = "Try new look on dark version";
-  static String treadSetter = "A trendsetter";
+  static String treadSetter = "Nothing Ahmet";
   static String yourProfile = "Your Profile";
   static String destination = "Choose Your Destination";
   static String advanture = "Choose Your Destination";
@@ -152,9 +153,9 @@ class Strings{
   static String setting1 = "Settings";
   static String explore = "Explore";
   static String privacyPolicy = "Privacy Policy";
-  static String interestDummy = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes";
+  static String interestDummy =
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes";
 
-
-  static String detailDes = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque arcu quis eros auctor, eu dapibus urna congue. Nunc nisi diam, semper maximus risus dignissim, semper maximus nibh. Sed finibus ipsum eu erat finibus efficitur. ";
-
+  static String detailDes =
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque arcu quis eros auctor, eu dapibus urna congue. Nunc nisi diam, semper maximus risus dignissim, semper maximus nibh. Sed finibus ipsum eu erat finibus efficitur. ";
 }

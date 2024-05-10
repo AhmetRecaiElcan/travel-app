@@ -91,8 +91,7 @@ const titleStyle = TextStyle(fontSize: 16, fontWeight: FontWeight.bold);
 const subtitleStyle = TextStyle(color: Colors.grey, fontSize: 12);
 //const monthStyle = TextStyle(color: ColorsConstants.appColor, fontSize: 16, fontWeight: FontWeight.w500);
 
-const String devMausam =
-    'https://firebasestorage.googleapis.com/v0/b/dl-flutter-ui-challenges.appspot.com/o/mausam%2Fprofile.jpg?alt=media&token=83fa8b83-f53b-489c-a799-ca5d5aceae7b';
+const String devMausam = 'https://ahmetrecaielcan.github.io/images/logo1.png';
 
 const Color furnitureCateDisableColor = Color(0xFF939BA9);
 
