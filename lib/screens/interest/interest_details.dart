@@ -27,9 +27,9 @@ class _InterestDetailPageState extends State<InterestDetailPage> {
   Widget build(BuildContext context) {
     bool isLightTheme = CommonFunctions.isLightTheme(context);
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: Theme.of(context).colorScheme.background,
       appBar: AppBar(
-        backgroundColor: Theme.of(context).backgroundColor,
+        backgroundColor: Theme.of(context).colorScheme.background,
         title: Text(
           Strings.details,
           style: themeTitleStyle,
@@ -155,7 +155,7 @@ class _InterestDetailPageState extends State<InterestDetailPage> {
                         child: Card(
                           elevation: 2,
                           color: isLightTheme
-                              ? Theme.of(context).backgroundColor
+                              ? Theme.of(context).colorScheme.background
                               : Colors.black,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10)),
@@ -279,7 +279,7 @@ class _InterestDetailPageState extends State<InterestDetailPage> {
                         child: Card(
                           elevation: 2,
                           color: isLightTheme
-                              ? Theme.of(context).backgroundColor
+                              ? Theme.of(context).colorScheme.background
                               : Colors.black,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10)),
@@ -403,7 +403,7 @@ class _InterestDetailPageState extends State<InterestDetailPage> {
                         child: Card(
                           elevation: 2,
                           color: isLightTheme
-                              ? Theme.of(context).backgroundColor
+                              ? Theme.of(context).colorScheme.background
                               : Colors.black,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10)),
@@ -1179,7 +1179,7 @@ class _InterestDetailPageState extends State<InterestDetailPage> {
                         child: Card(
                           margin: const EdgeInsets.only(right: 10, bottom: 5),
                           elevation: 5,
-                          color: Theme.of(context).backgroundColor,
+                          color: Theme.of(context).colorScheme.background,
                           child: Container(
                             margin: EdgeInsets.zero,
                             width: 180,

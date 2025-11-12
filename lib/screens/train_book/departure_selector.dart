@@ -13,7 +13,7 @@ class _DepartureSelectorState extends State<DepartureSelector> {
   @override
   Widget build(BuildContext context) {
     return DropdownButton(
-      style: Theme.of(context).textTheme.button?.apply(color: Colors.white),
+      style: Theme.of(context).textTheme.labelLarge?.apply(color: Colors.white),
       iconEnabledColor: Colors.white,
       underline: Container(),
       value: _selected,

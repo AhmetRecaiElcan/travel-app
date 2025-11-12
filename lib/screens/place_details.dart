@@ -34,7 +34,7 @@ class _PlaceDetailsState extends State<PlaceDetails> {
   Widget build(BuildContext context) {
     bool isLightTheme = CommonFunctions.isLightTheme(context);
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: Theme.of(context).colorScheme.background,
       body: Column(
         children: [
           Expanded(
@@ -164,7 +164,7 @@ class _PlaceDetailsState extends State<PlaceDetails> {
                       Container(
                         margin: const EdgeInsets.only(top: 10),
                         decoration: BoxDecoration(
-                            color: Theme.of(context).backgroundColor,
+                            color: Theme.of(context).colorScheme.background,
                             borderRadius: const BorderRadius.only(
                                 topLeft: Radius.circular(30),
                                 topRight: Radius.circular(30))),

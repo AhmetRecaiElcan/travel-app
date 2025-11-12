@@ -88,7 +88,7 @@ class _HotelScreenState extends State<HotelScreen>
                       ];
                     },
                     body: Container(
-                      color: Theme.of(context).backgroundColor,
+                      color: Theme.of(context).colorScheme.background,
                       child: ListView.builder(
                         itemCount: hotelList.length,
                         padding: const EdgeInsets.only(top: 8),
@@ -120,7 +120,7 @@ class _HotelScreenState extends State<HotelScreen>
   Widget getListUI() {
     return Container(
       decoration: BoxDecoration(
-        color: Theme.of(context).backgroundColor,
+        color: Theme.of(context).colorScheme.background,
         boxShadow: <BoxShadow>[
           BoxShadow(
               color: Colors.grey.withOpacity(0.2),
@@ -306,10 +306,10 @@ class _HotelScreenState extends State<HotelScreen>
                   borderRadius: BorderRadius.circular(40.0),
                 ),
                 elevation: 3,
-                color: Theme.of(context).backgroundColor,
+                color: Theme.of(context).colorScheme.background,
                 child: Container(
                   decoration: BoxDecoration(
-                    color: Theme.of(context).backgroundColor,
+                    color: Theme.of(context).colorScheme.background,
                     borderRadius: const BorderRadius.all(
                       Radius.circular(38.0),
                     ),
@@ -378,18 +378,18 @@ class _HotelScreenState extends State<HotelScreen>
           left: 0,
           right: 0,
           child: Card(
-            color: Theme.of(context).backgroundColor,
+            color: Theme.of(context).colorScheme.background,
             elevation: 3,
             child: Container(
               height: 24,
               decoration: BoxDecoration(
-                color: Theme.of(context).backgroundColor,
+                color: Theme.of(context).colorScheme.background,
               ),
             ),
           ),
         ),
         Container(
-          color: Theme.of(context).backgroundColor,
+          color: Theme.of(context).colorScheme.background,
           child: Padding(
             padding:
                 const EdgeInsets.only(left: 16, right: 16, top: 8, bottom: 4),
@@ -487,7 +487,7 @@ class _HotelScreenState extends State<HotelScreen>
   Widget getAppBarUI() {
     return Container(
       decoration: BoxDecoration(
-        color: Theme.of(context).backgroundColor,
+        color: Theme.of(context).colorScheme.background,
       ),
       child: Padding(
         padding: EdgeInsets.only(

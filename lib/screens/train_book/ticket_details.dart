@@ -78,7 +78,7 @@ class _TrainTicketDetailsState extends State<TrainTicketDetails> {
   Widget build(BuildContext context) {
     bool isLightTheme = CommonFunctions.isLightTheme(context);
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: Theme.of(context).colorScheme.background,
       bottomNavigationBar: GestureDetector(
         onTap: () {
           Navigator.of(context).push(MaterialPageRoute(
@@ -120,7 +120,7 @@ class _TrainTicketDetailsState extends State<TrainTicketDetails> {
         ),
       ),
       appBar: AppBar(
-        backgroundColor: Theme.of(context).backgroundColor,
+        backgroundColor: Theme.of(context).colorScheme.background,
         elevation: 0,
         iconTheme: IconThemeData(color: Colors.grey[400]),
         actions: <Widget>[
@@ -398,7 +398,7 @@ class _TrainTicketDetailsState extends State<TrainTicketDetails> {
               ),
               Container(
                 decoration: BoxDecoration(
-                    color: Theme.of(context).backgroundColor,
+                    color: Theme.of(context).colorScheme.background,
                     borderRadius: BorderRadius.circular(10)),
                 child: Image.asset(
                   "assets/images/upccode.png",
@@ -442,7 +442,7 @@ class _PlacesWidgetState extends State<PlacesWidget> {
   Widget build(BuildContext context) {
     return Container(
         padding: const EdgeInsets.all(15),
-        color: Theme.of(context).backgroundColor,
+        color: Theme.of(context).colorScheme.background,
         child: ListView.builder(
             itemCount: list.length,
             shrinkWrap: true,

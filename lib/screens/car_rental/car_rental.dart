@@ -23,7 +23,7 @@ class _CarRentalScreenState extends State<CarRentalScreen> {
   Widget build(BuildContext context) {
     bool isLightTheme = CommonFunctions.isLightTheme(context);
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: Theme.of(context).colorScheme.background,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -76,7 +76,7 @@ class _CarRentalScreenState extends State<CarRentalScreen> {
                 decoration: BoxDecoration(
                   color: isLightTheme
                       ? Colors.grey[100]
-                      : Theme.of(context).backgroundColor,
+                      : Theme.of(context).colorScheme.background,
                   borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(30),
                     topRight: Radius.circular(30),

@@ -60,7 +60,7 @@ class ResultDialog extends StatelessWidget {
               style: (title as Text).style ??
                   Theme.of(context)
                       .textTheme
-                      .headline6!
+                      .titleLarge!
                       .copyWith(color: textColor),
               textAlign: (title as Text).textAlign ?? TextAlign.center,
               duration: kThemeChangeDuration,

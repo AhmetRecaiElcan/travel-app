@@ -18,7 +18,7 @@ class _FlightScreenState extends State<FlightScreen> {
   Widget build(BuildContext context) {
     bool isLightTheme = CommonFunctions.isLightTheme(context);
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: Theme.of(context).colorScheme.background,
       body: SingleChildScrollView(
         physics: const BouncingScrollPhysics(),
         child: Container(

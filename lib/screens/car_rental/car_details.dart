@@ -52,7 +52,7 @@ class _CarDetailsScreenState extends State<CarDetailsScreen> {
     bool isLightTheme = CommonFunctions.isLightTheme(context);
     return Scaffold(
       // backgroundColor: Colors.white,
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: Theme.of(context).colorScheme.background,
       body: SafeArea(
         child: SizedBox(
           width: double.infinity,
@@ -514,7 +514,7 @@ class _CarDetailsScreenState extends State<CarDetailsScreen> {
     return Container(
       width: 130,
       decoration: BoxDecoration(
-        color: isLightTheme ? Colors.white : Theme.of(context).backgroundColor,
+        color: isLightTheme ? Colors.white : Theme.of(context).colorScheme.background,
         borderRadius: const BorderRadius.all(
           Radius.circular(15),
         ),

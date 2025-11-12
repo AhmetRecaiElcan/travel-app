@@ -20,14 +20,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Theme.of(context).backgroundColor,
+        backgroundColor: Theme.of(context).colorScheme.background,
         appBar: AppBar(
           elevation: 0,
           title: Text(
             Strings.setting1,
             style: themeTitleStyle,
           ),
-          backgroundColor: Theme.of(context).backgroundColor,
+          backgroundColor: Theme.of(context).colorScheme.background,
         ),
         body: Column(
           children: [
@@ -41,8 +41,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
   Widget buildSettingsList() {
     return SettingsList(
-      lightBackgroundColor: Theme.of(context).backgroundColor,
-      darkBackgroundColor: Theme.of(context).backgroundColor,
+      lightBackgroundColor: Theme.of(context).colorScheme.background,
+      darkBackgroundColor: Theme.of(context).colorScheme.background,
       contentPadding: const EdgeInsets.only(top: 20, left: 10, bottom: 10),
       sections: [
         SettingsSection(

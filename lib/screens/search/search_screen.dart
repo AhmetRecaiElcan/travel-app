@@ -167,12 +167,13 @@ class _SearchScreenState extends State<SearchScreen>
     double destinationLatitude,
     double destinationLongitude,
   ) async {
-    polylinePoints = PolylinePoints();
+    polylinePoints = PolylinePoints(apiKey: CommonFunctions.apiKey);
     PolylineResult result = await polylinePoints.getRouteBetweenCoordinates(
-      CommonFunctions.apiKey, // Google Maps API Key
-      PointLatLng(startLatitude, startLongitude),
-      PointLatLng(destinationLatitude, destinationLongitude),
-      travelMode: TravelMode.transit,
+      request: PolylineRequest(
+        origin: PointLatLng(startLatitude, startLongitude),
+        destination: PointLatLng(destinationLatitude, destinationLongitude),
+        mode: TravelMode.transit,
+      ),
     );
 
     if (result.points.isNotEmpty) {
@@ -617,7 +618,7 @@ class _SearchScreenState extends State<SearchScreen>
                           child: Container(
                             margin: const EdgeInsets.only(left: 5, right: 5),
                             decoration: BoxDecoration(
-                                color: Theme.of(context).backgroundColor,
+                                color: Theme.of(context).colorScheme.background,
                                 borderRadius: BorderRadius.circular(15)),
                             width: MediaQuery.of(context).size.width - 30,
                             child: Row(

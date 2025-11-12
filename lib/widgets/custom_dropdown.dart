@@ -80,7 +80,6 @@ class _DropdownScrollBehavior extends ScrollBehavior {
   TargetPlatform getPlatform(BuildContext context) =>
       Theme.of(context).platform;
 
-  @override
   Widget buildViewportChrome(
       BuildContext context, Widget child, AxisDirection axisDirection) =>
       child;
@@ -279,7 +278,7 @@ class _DropdownRouteResult<T> {
   final T result;
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     if (other is! _DropdownRouteResult<T>) {
       return false;
     }
@@ -506,12 +505,12 @@ class _DropdownButtonState<T> extends State<CustomDropdownButton<T>>
     /// Comment line below out if you don't want your dropdown to have an initial
     /// value upon initial build
     _updateSelectedIndex();
-    WidgetsBinding.instance!.addObserver(this);
+    WidgetsBinding.instance.addObserver(this);
   }
 
   @override
   void dispose() {
-    WidgetsBinding.instance!.removeObserver(this);
+    WidgetsBinding.instance.removeObserver(this);
     _removeDropdownRoute();
     super.dispose();
   }
@@ -551,7 +550,7 @@ class _DropdownButtonState<T> extends State<CustomDropdownButton<T>>
   }
 
   TextStyle get _textStyle =>
-      widget.style ?? Theme.of(context).textTheme.subtitle1!;
+      widget.style ?? Theme.of(context).textTheme.titleMedium!;
 
   void _handleTap() {
     final RenderBox itemBox = context.findRenderObject()! as RenderBox;

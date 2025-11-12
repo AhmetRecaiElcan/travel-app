@@ -1,5 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.templatemela.travel.booking">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.INTERNET"/>
    <application
@@ -11,7 +10,7 @@
            android:value="AIzaSyCxwfsHPlW81Zwn-latstgRYZQOR2fIkZ0"/>
 
        <activity
-            android:name="com.baseflow.geocoding.MainActivity"
+            android:name=".MainActivity"
             android:exported="true"
             android:launchMode="singleTop"
             android:theme="@style/LaunchTheme"

@@ -39,7 +39,7 @@ class _TicketCardState extends State<TicketCard> {
           child: Stack(
             children: <Widget>[
               Card(
-                color: Theme.of(context).backgroundColor,
+                color: Theme.of(context).colorScheme.background,
                 elevation: 5,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20.0),

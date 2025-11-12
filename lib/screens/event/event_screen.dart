@@ -100,7 +100,7 @@ class _EventScreenState extends State<EventScreen>
               padding: const EdgeInsets.only(top: 20, left: 10, right: 10),
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
-                  color: Theme.of(context).backgroundColor,
+                  color: Theme.of(context).colorScheme.background,
                   borderRadius:
                       const BorderRadius.only(topLeft: Radius.circular(30))),
               child: SingleChildScrollView(
@@ -198,7 +198,7 @@ class _EventScreenState extends State<EventScreen>
     return Container(
       decoration: BoxDecoration(
           borderRadius: const BorderRadius.vertical(top: Radius.circular(16)),
-          color: Theme.of(context).backgroundColor),
+          color: Theme.of(context).colorScheme.background),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
@@ -329,7 +329,7 @@ class UpComingEventCard extends StatelessWidget {
     final width = MediaQuery.of(context).size.width * 0.8;
     return Container(
       width: width,
-      color: Theme.of(context).backgroundColor,
+      color: Theme.of(context).colorScheme.background,
       margin: const EdgeInsets.only(right: 12),
       child: Column(
         children: <Widget>[

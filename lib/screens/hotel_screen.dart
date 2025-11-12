@@ -55,7 +55,7 @@ class _HotelDetailScreenState extends State<HotelDetailScreen>
       animationDuration: Duration(seconds: 1),
     );
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: Theme.of(context).colorScheme.background,
       body: SingleChildScrollView(
         child: Column(
           children: [

@@ -10,12 +10,12 @@ class Constants {
   static ThemeData lightTheme = ThemeData(
     brightness: Brightness.light,
     fontFamily: "Inter",
-    backgroundColor: ColorsConstants.lightBG,
     primaryColor: ColorsConstants.lightPrimary,
     colorScheme: ColorScheme.light(
       primary: ColorsConstants.lightPrimary,
       secondary: ColorsConstants.lightAccent,
       brightness: Brightness.light,
+      background: ColorsConstants.lightBG,
     ),
     textSelectionTheme: TextSelectionThemeData(cursorColor: ColorsConstants.lightAccent),
     scaffoldBackgroundColor: ColorsConstants.lightBG,
@@ -45,12 +45,12 @@ class Constants {
   static ThemeData darkTheme = ThemeData(
     fontFamily: "Inter",
     brightness: Brightness.dark,
-    backgroundColor: ColorsConstants.darkBG,
     primaryColor: ColorsConstants.darkPrimary,
-    colorScheme: ColorScheme.light(
+    colorScheme: ColorScheme.dark(
       primary: ColorsConstants.darkPrimary,
       secondary: ColorsConstants.darkAccent,
       brightness: Brightness.dark,
+      background: ColorsConstants.darkBG,
     ),
     pageTransitionsTheme: const PageTransitionsTheme(
       builders: {
@@ -60,7 +60,7 @@ class Constants {
     ),
     scaffoldBackgroundColor: ColorsConstants.darkBG,
     textTheme: TextTheme(
-      subtitle1: GoogleFonts.inter(
+      titleMedium: GoogleFonts.inter(
         color: ColorsConstants.lightBG,
       ),
     ),

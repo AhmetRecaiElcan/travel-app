@@ -148,7 +148,7 @@ class _TrainBookingScreenState extends State<TrainBookingScreen> {
                       blurRadius: 9,
                     ),
                   ],
-                  color: Theme.of(context).backgroundColor,
+                  color: Theme.of(context).colorScheme.background,
                   borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(35.0),
                     topRight: Radius.circular(35.0),

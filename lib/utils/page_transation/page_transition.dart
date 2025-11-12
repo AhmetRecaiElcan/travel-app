@@ -298,12 +298,8 @@ class PageTransition<T> extends PageRouteBuilder<T> {
                   )
                 ],
               );
-              // ignore: dead_code
-              break;
 
           /// FadeTransitions which is the fade transition
-            default:
-              return FadeTransition(opacity: animation, child: child);
           }
         },
       );

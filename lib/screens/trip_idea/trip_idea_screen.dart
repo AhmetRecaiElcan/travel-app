@@ -105,7 +105,7 @@ class _TripIdeaScreenState extends State<TripIdeaScreen>
                       controller: tabController,
                       unselectedLabelColor: Colors.grey,
                       labelPadding: const EdgeInsets.all(0),
-                      labelColor: Theme.of(context).backgroundColor,
+                      labelColor: Theme.of(context).colorScheme.background,
                       isScrollable: true,
                       onTap: (value) {
                         setState(() {

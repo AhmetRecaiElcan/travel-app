@@ -26,7 +26,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
     return Scaffold(
         appBar: AppBar(
           elevation: 0,
-          backgroundColor: Theme.of(context).backgroundColor,
+          backgroundColor: Theme.of(context).colorScheme.background,
           title: const Text(
             "Payment",
             style: themeTitleStyle,

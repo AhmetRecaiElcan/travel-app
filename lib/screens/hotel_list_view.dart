@@ -26,7 +26,7 @@ class HotelListView extends StatelessWidget {
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
           elevation: 8,
-          color: Theme.of(context).backgroundColor,
+          color: Theme.of(context).colorScheme.background,
           child: Container(
             decoration: const BoxDecoration(
               borderRadius: BorderRadius.all(Radius.circular(16.0)),
@@ -46,7 +46,7 @@ class HotelListView extends StatelessWidget {
                       ),
                       Container(
                         color:
-                            Theme.of(context).backgroundColor.withOpacity(0.9),
+                            Theme.of(context).colorScheme.background.withOpacity(0.9),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,

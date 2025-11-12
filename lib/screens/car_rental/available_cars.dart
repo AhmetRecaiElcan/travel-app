@@ -29,7 +29,7 @@ class _AvailableCarsState extends State<AvailableCars> {
     bool isLightTheme = CommonFunctions.isLightTheme(context);
     return Scaffold(
       backgroundColor:
-          isLightTheme ? Colors.grey[100] : Theme.of(context).backgroundColor,
+          isLightTheme ? Colors.grey[100] : Theme.of(context).colorScheme.background,
       body: SafeArea(
         child: Container(
           width: double.infinity,
@@ -85,7 +85,7 @@ class _AvailableCarsState extends State<AvailableCars> {
         height: 90,
         decoration: BoxDecoration(
           color:
-              isLightTheme ? Colors.white : Theme.of(context).backgroundColor,
+              isLightTheme ? Colors.white : Theme.of(context).colorScheme.background,
         ),
         child: Row(
           children: [

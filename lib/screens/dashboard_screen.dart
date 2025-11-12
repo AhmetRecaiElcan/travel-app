@@ -324,7 +324,7 @@ class _DashBoardScreenState extends State<DashBoardScreen>
                               margin:
                                   const EdgeInsets.only(left: 10, bottom: 5),
                               elevation: 5,
-                              color: Theme.of(context).backgroundColor,
+                              color: Theme.of(context).colorScheme.background,
                               child: Container(
                                 margin: EdgeInsets.zero,
                                 width: 180,
@@ -538,7 +538,7 @@ class _DashBoardScreenState extends State<DashBoardScreen>
           ];
         },
         body: Container(
-          color: Theme.of(context).backgroundColor,
+          color: Theme.of(context).colorScheme.background,
           child: ListView.builder(
             itemCount: hotelList.length,
             shrinkWrap: true,
@@ -693,10 +693,10 @@ class _DashBoardScreenState extends State<DashBoardScreen>
                   borderRadius: BorderRadius.circular(40.0),
                 ),
                 elevation: 3,
-                color: Theme.of(context).backgroundColor,
+                color: Theme.of(context).colorScheme.background,
                 child: Container(
                   decoration: BoxDecoration(
-                    color: Theme.of(context).backgroundColor,
+                    color: Theme.of(context).colorScheme.background,
                     borderRadius: const BorderRadius.all(
                       Radius.circular(38.0),
                     ),
@@ -765,18 +765,18 @@ class _DashBoardScreenState extends State<DashBoardScreen>
           left: 0,
           right: 0,
           child: Card(
-            color: Theme.of(context).backgroundColor,
+            color: Theme.of(context).colorScheme.background,
             elevation: 3,
             child: Container(
               height: 24,
               decoration: BoxDecoration(
-                color: Theme.of(context).backgroundColor,
+                color: Theme.of(context).colorScheme.background,
               ),
             ),
           ),
         ),
         Container(
-          color: Theme.of(context).backgroundColor,
+          color: Theme.of(context).colorScheme.background,
           child: Padding(
             padding:
                 const EdgeInsets.only(left: 16, right: 16, top: 8, bottom: 4),

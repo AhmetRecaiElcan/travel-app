@@ -439,7 +439,7 @@ class _EventDetailPageState extends State<EventDetailPage>
   Widget buildPriceInfo(isLightTheme) {
     return Container(
       padding: const EdgeInsets.all(16),
-      color: Theme.of(context).backgroundColor,
+      color: Theme.of(context).colorScheme.background,
       width: MediaQuery.of(context).size.width,
       child: Row(
         children: <Widget>[

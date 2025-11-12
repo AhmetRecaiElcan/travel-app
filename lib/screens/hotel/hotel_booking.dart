@@ -44,9 +44,9 @@ class _HotelBookingScreenState extends State<HotelBookingScreen> {
   Widget build(BuildContext context) {
     bool isLightTheme = CommonFunctions.isLightTheme(context);
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: Theme.of(context).colorScheme.background,
       appBar: AppBar(
-        backgroundColor: Theme.of(context).backgroundColor,
+        backgroundColor: Theme.of(context).colorScheme.background,
         elevation: 0,
         title: Text(
           Strings.booking,
@@ -66,7 +66,7 @@ class _HotelBookingScreenState extends State<HotelBookingScreen> {
               Padding(
                 padding: const EdgeInsets.only(top: 15, right: 15, left: 15),
                 child: Card(
-                  color: Theme.of(context).backgroundColor,
+                  color: Theme.of(context).colorScheme.background,
                   child: Padding(
                     padding: const EdgeInsets.all(0.0),
                     child: Column(
@@ -550,7 +550,7 @@ class _HotelBookingScreenState extends State<HotelBookingScreen> {
               Padding(
                 padding: const EdgeInsets.only(top: 15, right: 15, left: 15),
                 child: Card(
-                    color: Theme.of(context).backgroundColor,
+                    color: Theme.of(context).colorScheme.background,
                     child: Padding(
                       padding: const EdgeInsets.only(top: 15, bottom: 10),
                       child: Column(
@@ -725,7 +725,7 @@ class _HotelBookingScreenState extends State<HotelBookingScreen> {
               Padding(
                 padding: const EdgeInsets.only(top: 15, right: 15, left: 15),
                 child: Card(
-                  color: Theme.of(context).backgroundColor,
+                  color: Theme.of(context).colorScheme.background,
                   child: Padding(
                     padding:
                         const EdgeInsets.only(top: 20, left: 10, right: 10),
